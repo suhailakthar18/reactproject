@@ -1,4 +1,8 @@
 pipeline {
+    environment {
+    NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
+}
+
   agent any
   stages {
     stage ('Install node modules') {
