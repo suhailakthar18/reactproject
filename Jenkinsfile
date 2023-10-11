@@ -5,7 +5,7 @@ environment {
     NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
     }
 tools {
-    nodejs 'node'
+    NodeJS 'node'
   }
   stages {
     stage ('Install node modules') {
