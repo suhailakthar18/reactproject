@@ -5,9 +5,13 @@ environment {
     NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
     }
   stages {
+      stage ('node info') {
+      steps {
+        sh "npm config ls"
+      }
+    }
     stage ('Install node modules') {
       steps {
-          sh "echo ${WORKSPACE}"
         sh "npm install"
       }
     }
