@@ -7,6 +7,7 @@ pipeline {
   stages {
     stage ('Install node modules') {
       steps {
+          sh "echo ${WORKSPACE}"
         sh "npm install"
       }
     }
